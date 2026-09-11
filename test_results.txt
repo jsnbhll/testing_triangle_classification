@@ -1,0 +1,28 @@
+Example program command:
+python3 classify_triangle.py
+
+Example program output:
+3, 3, 3: Equilateral
+5, 5, 8: Isosceles
+4, 5, 6: Scalene
+3, 4, 5: Scalene and Right
+1, 2, 3: Not a triangle
+
+Automated test command:
+python3 -m unittest -v
+
+Automated test output:
+test_equilateral_triangle (test_classify_triangle.TestClassifyTriangle.test_equilateral_triangle) ... ok
+test_isosceles_triangle (test_classify_triangle.TestClassifyTriangle.test_isosceles_triangle) ... ok
+test_isosceles_triangle_in_different_orders (test_classify_triangle.TestClassifyTriangle.test_isosceles_triangle_in_different_orders) ... ok
+test_negative_side (test_classify_triangle.TestClassifyTriangle.test_negative_side) ... ok
+test_right_triangle_in_different_orders (test_classify_triangle.TestClassifyTriangle.test_right_triangle_in_different_orders) ... ok
+test_scalene_right_triangle (test_classify_triangle.TestClassifyTriangle.test_scalene_right_triangle) ... ok
+test_scalene_triangle (test_classify_triangle.TestClassifyTriangle.test_scalene_triangle) ... ok
+test_sides_that_do_not_make_a_triangle (test_classify_triangle.TestClassifyTriangle.test_sides_that_do_not_make_a_triangle) ... ok
+test_zero_side (test_classify_triangle.TestClassifyTriangle.test_zero_side) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.000s
+
+OK

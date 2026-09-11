@@ -1,0 +1,15 @@
+What challenges did you encounter with this assignment, if any?
+
+The main challenge was handling invalid side lengths. I also had to make sure the right triangle check worked regardless of the order of the sides.
+
+What did you think about the requirements specification for this assignment?
+
+The requirements explained the triangle types well. They could have been clearer about invalid inputs and the exact strings the function should return.
+
+What challenges did you encounter with the tools?
+
+The tools were easy to use. I had to learn. I just had to make sure I ran the tests from the correct folder.
+
+Describe the criteria you used to determine that you had sufficient test cases, i.e. how did you know you were done?
+
+I tested every triangle type, different side orders, and invalid inputs. I felt done once every part of the function was covered and all tests passed.
