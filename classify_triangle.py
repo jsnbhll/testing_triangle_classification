@@ -1,24 +1,28 @@
-def classify_triangle(a, b, c):
-    if a <= 0 or b <= 0 or c <= 0:
+"""Classify triangles by their side lengths."""
+
+
+def classify_triangle(side_a, side_b, side_c):
+    """Return the type of triangle for three side lengths."""
+    if side_a <= 0 or side_b <= 0 or side_c <= 0:
         return "Invalid input"
 
-    if a + b <= c or a + c <= b or b + c <= a:
+    if side_a + side_b <= side_c or side_a + side_c <= side_b or side_b + side_c <= side_a:
         return "Not a triangle"
 
-    if a == b and b == c:
+    if side_a == side_b and side_b == side_c:
         triangle_type = "Equilateral"
-    elif a == b or a == c or b == c:
+    elif side_a == side_b or side_a == side_c or side_b == side_c:
         triangle_type = "Isosceles"
     else:
         triangle_type = "Scalene"
 
     is_right = False
 
-    if a * a + b * b == c * c:
+    if side_a * side_a + side_b * side_b == side_c * side_c:
         is_right = True
-    if a * a + c * c == b * b:
+    if side_a * side_a + side_c * side_c == side_b * side_b:
         is_right = True
-    if b * b + c * c == a * a:
+    if side_b * side_b + side_c * side_c == side_a * side_a:
         is_right = True
 
     if is_right:
